@@ -1,3 +1,5 @@
+# Драконы - "хитрое" решение
+
 heads = int(input())
 
 power = 3 ** (heads // 3)

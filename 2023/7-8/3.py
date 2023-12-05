@@ -1,3 +1,4 @@
+# Сумма цифр числа
 def sum_digits(a):
     s = 0
     while a > 0:
@@ -6,6 +7,7 @@ def sum_digits(a):
     return s
 
 
+# Определение, лучше число a, чем b, или нет
 def comp(a, b, sum_b):
     sum_a = sum_digits(a)
     if sum_a > sum_b:

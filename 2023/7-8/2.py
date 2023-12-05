@@ -1,3 +1,5 @@
+# Раскрасить таблицу умножения
+
 m, n = map(int, input().split())
 
 red, green, blue = 0, 0, 0

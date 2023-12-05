@@ -1,3 +1,5 @@
+# Лестницы - рекурсивное решение
+
 def stairs(prev_level, n):
     if n == 0:
         return 1
