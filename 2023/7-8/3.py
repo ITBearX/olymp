@@ -13,7 +13,7 @@ def comp(a, b, sum_b):
     if sum_a > sum_b:
         return sum_a
     if sum_a == sum_b:
-        return a < b
+        return sum_a * (a < b)
     return 0
 
 
