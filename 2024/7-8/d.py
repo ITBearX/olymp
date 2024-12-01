@@ -1,4 +1,4 @@
-from math import gcd, lcm
+from math import gcd
 
 
 a = int(input())
@@ -9,14 +9,13 @@ d = int(input())
 if b < 0:
     a = -a
 if d < 0:
-    b = -b
+    c = -c
 
-den = lcm(b, d)
-num = a * den // b + c * den // d
+num = a * d + c * b
+den = b * d
 
-if den % num == 0:
-    k = gcd(num, den)
-    num = num // k
-    den = den // k
+k = gcd(num, den)
+num //= k
+den //= k
 
 print(num, den)
