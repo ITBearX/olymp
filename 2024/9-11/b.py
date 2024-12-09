@@ -1,7 +1,7 @@
 h, m, n = map(int, input().split())
 
 chimes = (n // 720) * 114
-for _ in range(1, n % 720):
+for _ in range(1, n % 720 + 1):
     m += 1
     if m == 60:
         m = 0
