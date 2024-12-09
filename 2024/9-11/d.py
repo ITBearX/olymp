@@ -1,4 +1,6 @@
 def is_smart(n):
+    if int(n**0.5) ** 2 == n:
+        return False
     d, m = 0, 2
     while n > 1 and m*m < n:
         if n % m == 0:
@@ -14,6 +16,8 @@ def is_smart(n):
     return d > 0
 
 
-with open("d-input.txt") as f:
-    f.readline()
-    print(sum(is_smart(int(s)) for s in f))
+for i in range(1, 6):
+    filename = f"d-input-{i}.txt"
+    with open(filename) as f:
+        f.readline()
+        print(sum(is_smart(int(s)) for s in f))

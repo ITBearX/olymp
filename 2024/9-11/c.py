@@ -16,6 +16,14 @@ def balance(s):
     return len(stack) == 0
 
 
-with open("c-input.txt") as f:
+with open("input.txt") as f:
     f.readline()
     print(sum(balance(s) for s in f))
+
+'''
+for n in range(1, 6):
+    filename = f"input-{n}.txt"
+    with open(filename) as f:
+        f.readline()
+        print(sum(balance(s) for s in f))
+'''
