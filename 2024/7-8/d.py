@@ -7,9 +7,9 @@ c = int(input())
 d = int(input())
 
 if b < 0:
-    a = -a
+    a, b = -a, -b
 if d < 0:
-    c = -c
+    c, d = -c, -d
 
 num = a * d + c * b
 den = b * d
